@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="PUP Binan">
+    <meta name="keywords" content="PUP Binan, Polytechnic University of the Philippines Binan, PUPBC, PUP-BC, Binan">
+    <meta name="description" content="Polytechnic University of the Philippines Binan - PUP Binan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://www.pup.edu.ph/resources/images/icons/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Polytechnic University Of The Philippines</title>
+</head> 
+
+    <style type="text/css">
+      
+    .logo-img {
+      max-height: 70px!important;
+      padding: 15px 0!important;
+      }
+
+nav ul li a{
+  color: black;
+}    
+
+   
+
+.footer-copyright {
+    background: #7e0e09 !important;
+}
+
+footer.page-footer {
+    background: white;
+}
+
+
+nav .button-collapse i {
+
+    color: black;
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(126, 14, 9);
+}
+
+div#asd{
+
+  height: 593px;
+}
+
+.col.s12.m12{
+  margin-top: 100px;
+}
+
+
+  #add-button, #add-modal {
+            margin-top: 15px;
+        }
+
+        .modal{
+            width: 75%;
+            max-height: 85%;
+            height: 60% !important;
+        }
+
+
+    </style>
+
+    <body>
+     <nav>
+         <div class="nav-wrapper white">
+            <div class="container">
+               <a href="#!" class="brand-logo">  <img class="responsive-img logo-img"  src="puplogo.png">
+               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                   <ul class="right hide-on-med-and-down">
+                      <li><a href="#" >Home</a></li>
+                      <li><a href="#">Informe</a></li>
+                      <li><a href="#">Online Request</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                           <li><a class="waves-effect waves-light btn" a href="login.html">Sign In</a></li>
+                  </ul>
+                      <ul class="side-nav"  id="mobile-demo">
+                        <li><a href="sass.html">Home</a></li>
+                        <li><a href="#">Informe</a></li>
+                        <li><a href="#">Online Request</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a class="waves-effect waves-light btn" a href="login.html">Sign In</a></li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+      
+  <div class="section ">
+      </div>
+
+
+
+<div class="container" id="asd">
+    <div class="container">
+       <h5 class="ew">Welcome :</h5>
+    <h4 class="center-align">Online Request Admin</h4>
+    <div class="row">
+        <div id="add-button" class="col s12 m1 l1"><a class="green waves-effect waves-light btn" href="#add-modal"><i class="material-icons">add</i></a></div>
+        <div class="input-field col s12 l11 m8">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Search here</label>
+        </div>
+    </div>
+    <div class="row">
+        <table class="bordered highlight centered">
+            <thead class="light-blue lighten-1 white-text">
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Check Item</th>
+                    <th>Description</th>
+                    <th>GC</th>
+                    <th>LV</th>
+                    <th>FL</th>
+                    <th>MR</th>
+                    <th>Remarks</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="add-modal" class="modal">
+        <h5 class="center-align">Add data</h5>
+        <form id="add-form">
+            <div class="row">
+                <div class="col input-field s4">
+                    <input placeholder="Enter product" id="product" type="text" autocomplete="off" required>
+                    <label for="product">Product</label>
+                </div>
+                <div class="col input-field s4">
+                    <input placeholder="Enter check item" id="check_item" type="text" autocomplete="off" required>
+                    <label for="check_item">Check Item</label>
+                </div>
+                <div class="col input-field s4">
+                    <input placeholder="Enter description" id="description" type="text" autocomplete="off" required>
+                    <label for="description">Description</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col input-field s3">
+                    <input placeholder="Enter GC" id="gc" type="text" autocomplete="off" required>
+                    <label for="gc">GC</label>
+                </div>
+                <div class="col input-field s3">
+                    <input placeholder="Enter LV" id="lv" type="text" autocomplete="off" required>
+                    <label for="lv">LV</label>
+                </div>
+                <div class="col input-field s3">
+                    <input placeholder="Enter FL" id="fl" type="text" autocomplete="off" required>
+                    <label for="fl">FL</label>
+                </div>
+                <div class="col input-field s3">
+                    <input placeholder="Enter MR" id="mr" type="text" autocomplete="off" required>
+                    <label for="mr">MR</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col input-field s10">
+                    <input placeholder="Enter remarks" id="remarks" type="text" autocomplete="off" required>
+                    <label for="remarks">Remarks</label>
+                </div>
+                <div class="col s2">
+                    <button id="add-modal" class="green btn waves-effect waves-light" type="submit">Save
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+           
+        </div>
+    
+ 
+         </div>
+
+
+             <footer class="page-footer">
+        
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="white-text text-lighten-4 right" href="#!">Developed By : Josua Berganio & Daniel Rivera</a>
+            </div>
+          </div>
+        </footer>
+            
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+          </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+ <script>
+        $(document).ready(function() {
+            $('.modal').modal();
+
+            getData();
+
+            $('#add-form').submit(function(e) {
+                e.preventDefault();
+
+                var toDb = {
+                    product: $('#product').val(),
+                    check_item: $('#check_item').val(),
+                    description: $('#description').val(),
+                    gc: $('#gc').val(),
+                    lv: $('#lv').val(),
+                    fl: $('#fl').val(),
+                    mr: $('#mr').val(),
+                    remarks: $('#remarks').val()
+                };
+
+                $.ajax({
+                    url: 'save.php',
+                    type: 'POST',
+                    data: toDb,
+                    success: function() {
+                        $('#product').val('');
+                        $('#check_item').val('');
+                        $('#description').val('');
+                        $('#gc').val('');
+                        $('#lv').val('');
+                        $('#fl').val('');
+                        $('#mr').val('');
+                        $('#remarks').val('');
+
+                        alert('Data added');
+                        $('tbody').html('');
+                        getData();
+                    }
+                });
+            });
+
+            function getData() {
+                $.ajax({
+                    url: 'getdata.php',
+                    type: 'get',
+                    dataType: 'JSON',
+                    success: function(response) {
+                        var len = response.length;
+                        for(var i = 0; i < len; i++) {
+                            $('tbody').append('<tr><td>'+response[i].id+'</td><td>'+response[i].product+'</td><td>'+response[i].check_item+'</td><td>'+response[i].description+'</td><td>'+response[i].gc+'</td><td>'+response[i].lv+'</td><td>'+response[i].fl+'</td><td>'+response[i].mr+'</td><td>'+response[i].remarks+'</td><td><a class="btn-floating waves-effect waves-light light-blue"><i class="material-icons">edit</i></a><a class="btn-floating waves-effect waves-light  red"><i class="material-icons">close</i></a><a class="btn-floating waves-effect waves-light orange"><i class="material-icons">print</i></a></td></tr>');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+      
+
+     </script>
+    </body>
+  </html>
+  
+

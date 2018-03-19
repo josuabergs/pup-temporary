@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="PUP Binan">
+    <meta name="keywords" content="PUP Binan, Polytechnic University of the Philippines Binan, PUPBC, PUP-BC, Binan">
+    <meta name="description" content="Polytechnic University of the Philippines Binan - PUP Binan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://www.pup.edu.ph/resources/images/icons/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Polytechnic University Of The Philippines</title>
+</head> 
+
+    <style type="text/css">
+      
+    .logo-img {
+      max-height: 70px!important;
+      padding: 15px 0!important;
+      }
+
+nav ul li a{
+  color: black;
+}    
+
+   
+
+.footer-copyright {
+    background: #7e0e09 !important;
+}
+
+footer.page-footer {
+    background: white;
+}
+
+
+nav .button-collapse i {
+
+    color: black;
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(126, 14, 9);
+}
+
+
+
+.col.s12.m12{
+  margin-top: 100px;
+}
+
+div#asd{
+
+  height: 593px;
+}
+
+
+    </style>
+
+    <body>
+     <nav>
+         <div class="nav-wrapper white">
+            <div class="container">
+               <a href="#!" class="brand-logo">  <img class="responsive-img logo-img"  src="puplogo.png">
+               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                   <ul class="right hide-on-med-and-down">
+                      <li><a href="#" >Home</a></li>
+                      <li><a href="#">Informe</a></li>
+                      <li><a href="#">Online Request</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                           <li><a class="waves-effect waves-light btn" a href="login.html">Sign In</a></li>
+                  </ul>
+                      <ul class="side-nav"  id="mobile-demo">
+                        <li><a href="sass.html">Home</a></li>
+                        <li><a href="#">Informe</a></li>
+                        <li><a href="#">Online Request</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a class="waves-effect waves-light btn" a href="login.html">Sign In</a></li>
+
+                    </ul>
+                  </div>
+                </nav>
+
+      
+  <div class="section ">
+      </div>
+
+
+
+<div class="container" id="asd">
+  
+       <h5 class="ew">Welcome :</h5>
+          <h4 class="center-align">Admin Manage Account</h4>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col s1 l1" id="add_icon_modal">
+          <a href="#add_modal" class="green waves-effect waves-light btn"><i class="material-icons">add</i></a>
+        </div>
+        <div class="col offset-l1 offset-s3 s7 l10 input-field">
+          <input id="search" type="search" name="search" autocomplete="off">
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        </div>
+        <table class="col s12 bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Entity</th>
+              <th>Number</th>
+              <th style="text-align: center;">Action</th>
+            </tr>
+          </thead>
+        
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div id="add_modal" class="modal">
+    <div class="modal-header">
+      <h5>Add New Client</h5>
+    </div>
+    <div class="divider"></div>
+    <form id="add_modal" method="POST">
+      <div class="modal-content">
+        <div class="row">
+          <div class="input-field col s12 m12 l6">
+            <i class="material-icons prefix">account_circle</i>
+            <input required id="client_name" type="text" class="validate" name="client_name">
+            <label for="client_name">Name</label>
+          </div>
+          <div class="input-field col s12 m12 l6">
+            <i class="material-icons prefix">call</i>
+            <input required id="client_number" type="number" class="validate" name="client_number">
+            <label for="client_number">Number</label>
+          </div>
+          <div class="input-field col s12 l12">
+            Choose client's entity:
+            <select id="client_entity">
+              <option value="Student" selected>Student</option>
+              <option value="Faculty">Faculty</option>
+              <option value="Staff">Staff</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="modal-footer">
+        <button class="green btn waves-effect waves-light" id="add_new_client" type="submit" name="submit">Add Client
+          <i class="material-icons right">add</i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="edit_modal" class="modal">
+    <div class="modal-header">
+      <h5>Edit Client Details</h5>
+    </div>
+    <div class="divider"></div>
+    <form id="edit_modal" method="POST">
+      <div class="modal-content">
+        <div class="row">
+          <div class="input-field col s12 m12 l6">
+            <i class="material-icons prefix">account_circle</i>
+            <input required id="edit_name" type="text" class="validate" name="client_name">
+            <label id="label-name" for="client_name">Name</label>
+          </div>
+          <div class="input-field col s12 m12 l6">
+            <i class="material-icons prefix">call</i>
+            <input required id="edit_number" type="number" class="validate" name="client_number">
+            <label id="label-number" for="client_number">Number</label>
+          </div>
+          <div class="input-field col s12 l12">
+            Choose client's entity:
+            <select id="client_entity">
+              <option value="Student" selected>Student</option>
+              <option value="Faculty">Faculty</option>
+              <option value="Staff">Staff</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="modal-footer">
+        <button class="green btn waves-effect waves-light" id="edit_client_details" type="submit" name="submit">save
+          <i class="material-icons right">edit</i>
+        </button>
+      </div>
+    </form>
+    <button class="red btn waves-effect waves-light" id="delete_client">
+      Delete
+      <i class="material-icons right">close</i>
+    </button>
+  </div>
+
+  <div id="direct_modal" class="modal">
+    <div class="modal-header">
+      <h5>Direct Message</h5>
+    </div>
+    <div class="divider"></div>
+    <form id="direct_sms" method="POST">
+      <div class="modal-content">
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <input disabled value="I am not editable" id="message-name" type="text" class="validate">
+            <label for="disabled">Name</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <input disabled value="I am not editable" id="message-number" type="text" class="message-number">
+            <label for="disabled">Number</label>
+          </div>
+          <div class="input-field col s12 l12">
+            <textarea id="announcement" class="materialize-textarea" autocomplete="off"></textarea>
+            <label for="announcement">Enter direct message here</label>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="modal-footer">
+        <button class="green btn waves-effect waves-light" type="submit" name="submit">Send
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+            
+          </div>
+
+    </div>
+ 
+         </div>
+
+
+             <footer class="page-footer">
+        
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="white-text text-lighten-4 right" href="#!">Developed By : Josua Berganio & Daniel Rivera</a>
+            </div>
+          </div>
+        </footer>
+            
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+          </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+       <script type="text/javascript">
+    $(document).ready(function(){
+      var client_id;
+      var direct_number;
+      var direct_name;
+      $("#add_modal").submit(function(e){
+        e.preventDefault();
+        var url = "add_client.php";
+        var toPhp = {
+          name:$("#client_name").val(),
+          number:$("#client_number").val(),
+          entity:$("#client_entity").val()};
+
+        $.ajax({
+          url: url,
+          data: toPhp,
+          type: "POST",
+          success: function(response){
+            if(response == "exists") {
+              swal("Sorry. Client already registered", "", "warning");
+            } else {
+              $("#client_name").val("");
+              $("#client_number").val("");
+              window.location.reload(true);
+              swal({
+                title: "Success",
+                type: "success",
+                text: "",
+                timer: 2000,
+                showConfirmButton: false
+              });
+            }
+          },
+          error: function(){
+            swal("Error!", "Error submitting the form", "error");}
+        });
+      });
+
+      $(".edit_client").on("click", function(){
+        client_id = $(this).attr("data-value");
+        $("#label-name").attr("class", "active");
+        $("#label-number").attr("class", "active");
+        $("#edit_name").val($(this).attr("data-name"));
+        $("#edit_number").val($(this).attr("data-number"));
+        $("#client_entity").val($(this).attr("data-entity"));
+      });
+
+      $("#delete_client").on("click", function(){
+        swal({
+          title: "Are you sure you want to delete this client?",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#DD6B55",
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
+        function(isConfirm){
+          if (isConfirm) {
+            var toDb = {
+              delete_id: client_id,
+              name: $("#edit_name").val()
+            };
+
+            $.ajax({
+              url: "delete_client.php",
+              data: toDb,
+              type: "POST",
+              success: function(){
+                window.location.reload(true);
+              }
+            });
+            swal("Deleted!", "", "success");
+          } else {
+            swal("Cancelled", "", "error");
+          }
+        });
+      });
+
+      $(".direct_message").on("click", function(){
+        direct_number = $(this).attr("data-num");
+        direct_name = $(this).attr("data-name");
+        $("#message-name").val($(this).attr("data-name"));
+        $("#message-number").val($(this).attr("data-num"));
+        $("#message-name").attr("value",$(this).attr("data-name"));
+        $("#message-number").attr("value",$(this).attr("data-num"));
+      });
+
+      $("#direct_sms").submit(function(e){
+        e.preventDefault();
+        var url = "direct_message.php";
+        var toPhp = {
+          name: direct_name,
+          recipient: direct_number,
+          subject: "Direct SMS",
+          announcement: $("#announcement").val()
+        };
+
+        $.ajax({
+          url: url,
+          data: toPhp,
+          type: "POST",
+          success: function(){
+            swal("Success!", "", "success");
+            $("#announcement").val("");
+            $("#subject").val("");
+          },
+          error: function(){
+            swal("Error!", "Error submitting the form", "error");
+          }
+        });
+      });
+    });
+  </script>
+
+
+     </script>
+    </body>
+  </html>
+  
+
